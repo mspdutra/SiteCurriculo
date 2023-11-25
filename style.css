@@ -1,0 +1,118 @@
+*{
+    margin: 0; /* Margem */
+    padding: 0; /* Preenchimento da Margem */
+    scroll-behavior: smooth; /* Comportamento da rolagem: suave */
+}
+
+body{
+    height: 100vh;
+    background: #211522; /* Cor de fundo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #D3B1C2;
+}
+
+header{
+    background:#613659;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.pagina-inicial{
+    padding: 0 8.4rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.icone{
+    font-size: 1.5rem;
+    font-weight: 800; /* 100 - 1000*/;
+}
+
+.icone img{
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+}
+
+ul{
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background: transparent;
+    overflow: hidden;
+}
+
+li a{
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: #D3B1C2;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+
+li a:hover{
+    color: #211522;
+}
+
+.pessoal{
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: repetar(auto-fit, minmax(350px,1fr));
+    row-gap: 2rem;
+    column-gap: 6rem;
+    align-items: center;
+}
+
+.pessoal h1{
+   color: #C197D2;
+   font-size: 4rem;
+   font-weight: 900;    
+}
+
+.foto{
+    border:#613659;
+    width: 250px;
+    border-top: 2px solid #C197D2;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.foto img{
+    width: 100%;
+    height: auto;
+
+}
+
+.redes-sociais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+}
+
+.redes-sociais{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #D3B1C2;
+    border: 1.6px solid #D3B1C2;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.redes-sociais a :hover{
+    color:#D3B1C2;
+    background-color: #D3B1C2;
+}
